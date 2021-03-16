@@ -24,5 +24,11 @@ timeLine.fromTo(
     1.2,
     {x: "-100%"},
     {x: "0%",
-    ease: Power2.easeInOut
+    ease: Power2.easeOutIn
 })
+.to(
+    menuIcon,
+    0.5,
+    {rotation: 360},
+    "+=0.2"
+)
