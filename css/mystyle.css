@@ -23,7 +23,10 @@
 	left: 0;
 	width: 100%;
 	height: 100vh;
-	background: linear-gradient(to left, #ba7453, #d1a984);
+	/* background: linear-gradient(to left, #5F0A87, #A4508B
+	); */
+	background-color: #bf3a30;
+background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
 	z-index: -1;
 }
 nav {
