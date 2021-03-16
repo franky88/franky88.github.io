@@ -1,3 +1,11 @@
 .skills-type {
 	margin-bottom: 0;
 }
+.my-name {
+	color: #222;
+}
+.my-name:hover {
+	color: #222;
+	transition: all;
+	transition-delay: 1s;
+}
