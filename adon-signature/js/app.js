@@ -6,6 +6,7 @@ const RootComponent = {
             sigPosition: "Your position",
             sigPhone: "07 5586 1400",
             sigMobile: "0401 736 730",
+            buttonText: "Generate Signature",
             isShowOpt1: true,
             isShowOpt2: false,
             isShowOpt3: false

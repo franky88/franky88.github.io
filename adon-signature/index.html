@@ -47,7 +47,7 @@
                       <label for=''>Phone Number</label>
                       <input id="sigphone" type='text' class='form-control mb-2' :placeholder="sigPhone" v-model="sigPhone">
                       <button style='width: 100%;' class='btn btn-primary' v-on:click="getData">
-                        Create Signature
+                        {{buttonText}}
                       </button>
                   </form>
                   <form v-if="isShowOpt2" action='' class='form form-group mb-3'>
@@ -60,7 +60,7 @@
                     <label for=''>Mobile Number</label>
                     <input id="sigmobile2" type='text' class='form-control mb-2' :placeholder="sigMobile" v-model="sigMobile">
                     <button style='width: 100%;' class='btn btn-primary' v-on:click="getData2">
-                      Create Signature
+                      {{buttonText}}
                     </button>
                   </form>
                   <form v-if="isShowOpt3" action='' class='form form-group mb-3'>
@@ -71,7 +71,7 @@
                     <label for=''>Mobile Number</label>
                     <input id="sigmobile3" type='text' class='form-control mb-2' :placeholder="sigMobile" v-model="sigMobile">
                     <button style='width: 100%;' class='btn btn-primary' v-on:click="getData3">
-                      Create Signature
+                      {{buttonText}}
                     </button>
                   </form>
                 </div>
