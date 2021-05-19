@@ -3,16 +3,18 @@ const app = Vue.createApp({
         return {
             myApps: [
                 {
+                    id: 1,
                     name: "Portable Illustrator",
                     link: "http://bit.ly/portableillustrator",
-                    status: true
+                    isShow: true
                 }
             ],
             myTools: [
                 {
+                    id: 1,
                     name: "AdOn Signature Generator",
                     link: "/adon-signature",
-                    status: true
+                    isShow: true
                 }
             ]
         }
