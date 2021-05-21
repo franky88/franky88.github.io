@@ -1,0 +1,54 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.logo {
+  text-align: left;
+}
+.logo img {
+  width: 100%;
+  max-width: 150px;
+  text-align: left;
+}
+#sub {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-row {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-row > div {
+  width: calc(100% / 3 - 10px);
+}
+input {
+  height: 30px;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(179, 179, 179);
+  /* text-align: right; */
+/* } */
+/* #order-res-details {
+  width: 300px;
+}
+.header-text {
+  text-align: center;
+  padding: 30px;
+} */
+p {
+  font-size: 12px;
+}
