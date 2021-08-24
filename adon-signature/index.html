@@ -80,138 +80,193 @@
                 <div v-if="isShowOpt1" class="card card-body">
                   <h4 class="card-title">Live Preview</h4>
                   <hr>
-                  <table style='width: 650px; height: auto; font-family: sans-serif; background: url(https://i.postimg.cc/T114xfKp/bg-gradiant.png); background-repeat: no-repeat; padding: 10px; background-size: cover; color: #fff; border-radius: 10px; margin: 0;'>
-                    <tbody>
+                  <table
+                      width="650"
+                      height="170"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="
+                          border-collapse: collapse;
+                          background: url(https://adondevelopment.com/clients/2021_sig_directory/images/background.png);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          border-radius: 15px;
+                          color: white;
+                          font-family: sans-serif;
+                          line-height: 0px;
+                          font-size: 1px;
+                          padding: 0px;
+                          border-spacing: 0px;
+                          margin: 0;
+                          text-decoration: none;
+                      "
+                  >
                       <tr>
-                        <td>
-                          <img style='width: 180px; height: auto; padding: -10px;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png' alt='AdOn logo'>
-                        </td>
-                        <td style='padding-top: 10px;'>
-                          <b style='font-size: 18px;'>
-                            {{ sigName }}
-                          </b>
-                          <p style="font-size: 14px;">{{ sigPosition }}</p>
-                          <p style='font-size: 10px;'>
-                            <a :href=`tel:${sigPhone}` target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-01.png' alt='phone'>
-                              </span> &nbsp {{ sigPhone }}
-                            </a>
-                            <br>
-                            <a href='https://www.adongroup.com.au' target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png' alt='internet'>
-                              </span> &nbsp www.adongroup.com.au
-                            </a>
-                            <br>
-                          </p>
-                        </td>
-                        <td>
-                          <img style='width: 250px; height: auto; float: right;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif' alt='Partner'>
-                        </td>
+                          <td width="180"><img style="width: 180px; height: auto;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png" alt="" /></td>
+                          <td>
+                              <table width="95%" height="85%" cellspacing="0" cellpadding="0" style="margin-left: 10px; margin-top: 20px;">
+                                  <tr>
+                                      <td height="15" style="font-size: 15px; color: white;"><b>{{sigName}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="11" style="font-size: 11px; line-height: 1; color: white;"><b>{{sigPosition}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="50" style="line-height: 1.2; font-size: 10px;">
+                                          <p>
+                                              <a style="text-decoration: none; color: white;" href=`tel:${sigPhone}`>
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-01.png" alt="phone" /> <span style="font-size: 10px;"> {{sigPhone}}</span>
+                                              </a>
+                                              <br />
+                                              <a style="text-decoration: none; color: white;" href="https://www.adongroup.com.au">
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png" alt="internet" />
+                                                  <span style="font-size: 10px;"> www.adongroup.com.au</span>
+                                              </a>
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td width="250px"><img style="width: 250px; height: auto; float: right;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif" alt="Partner" /></td>
                       </tr>
                       <tr>
-                        <td colspan='3'>
-                          <p style='line-height: 1.2; font-size: 8px; padding-left: 15px; padding-right: 15px;'>
-                            This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
-                          </p>
-                        </td>
+                          <td colspan="3" height="40" style="line-height: 1.2; font-size: 8px;">
+                              <p style="font-size: 8px; margin-left: 12px; margin-right: 12px; margin-bottom: 10px;">
+                                  This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the
+                                  contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
+                              </p>
+                          </td>
                       </tr>
-                    </tbody>
                   </table>
                   <p class="mt-2"><b>Note: </b>Do not copy this signature. This is for viewing porposes only.</p>
                 </div>
                 <div v-if="isShowOpt2" class="card card-body">
                   <h4 class="card-title">Live Preview</h4>
                   <hr>
-                  <table style='width: 650px; height: auto; font-family: sans-serif; background: url(https://i.postimg.cc/T114xfKp/bg-gradiant.png); background-repeat: no-repeat; padding: 10px; background-size: cover; color: #fff; border-radius: 10px; margin: 0;'>
-                    <tbody>
+                  <table
+                      width="650"
+                      height="170"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="
+                          border-collapse: collapse;
+                          background: url(https://adondevelopment.com/clients/2021_sig_directory/images/background.png);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          border-radius: 15px;
+                          color: white;
+                          font-family: sans-serif;
+                          line-height: 0px;
+                          font-size: 1px;
+                          padding: 0px;
+                          border-spacing: 0px;
+                          margin: 0;
+                          text-decoration: none;
+                      "
+                  >
                       <tr>
-                        <td>
-                          <img style='width: 180px; height: auto; padding: -10px;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png' alt='AdOn logo'>
-                        </td>
-                        <td style='padding-top: 10px;'>
-                          <b style='font-size: 18px;'>
-                            {{ sigName }}<br>
-                          </b>
-                          <p>{{ sigPosition }}</p>
-                          <p style='font-size: 10px;'>
-                            <a :href=`tel:${sigPhone}` target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-01.png' alt='phone'>
-                              </span> &nbsp {{ sigPhone }}
-                            </a>
-                            <br>
-                            <a :href=`tel:${sigMobile}` target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-mobile-01.png' alt='mobile'>
-                              </span> &nbsp {{ sigMobile }}
-                            </a>
-                            <br>
-                            <a href='https://www.adongroup.com.au' target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png' alt='internet'>
-                              </span> &nbsp www.adongroup.com.au
-                            </a>
-                            <br>
-                          </p>
-                        </td>
-                        <td>
-                          <img style='width: 250px; height: auto; float: right;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif' alt='Partner'>
-                        </td>
+                          <td width="180"><img style="width: 180px; height: auto;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png" alt="" /></td>
+                          <td>
+                              <table width="95%" height="85%" cellspacing="0" cellpadding="0" style="margin-left: 10px; margin-top: 20px;">
+                                  <tr>
+                                      <td height="15" style="font-size: 15px; color: white;"><b>{{sigName}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="11" style="font-size: 11px; line-height: 1; color: white;"><b>{{sigPosition}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="50" style="line-height: 1.2; font-size: 10px;">
+                                          <p>
+                                              <a style="text-decoration: none; color: white;" href=`tel:${sigPhone}`>
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-01.png" alt="phone" /> <span style="font-size: 10px;"> {{sigPhone}}</span>
+                                              </a>
+                                              <br />
+                                              <a style="text-decoration: none; color: white;" href=`tel:${sigMobile}`>
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-mobile-01.png" alt="phone" /> <span style="font-size: 10px;"> {{sigMobile}}</span>
+                                              </a>
+                                              <br />
+                                              <a style="text-decoration: none; color: white;" href="https://www.adongroup.com.au">
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png" alt="internet" />
+                                                  <span style="font-size: 10px;"> www.adongroup.com.au</span>
+                                              </a>
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td width="250px"><img style="width: 250px; height: auto; float: right;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif" alt="Partner" /></td>
                       </tr>
                       <tr>
-                        <td colspan='3'>
-                          <p style='line-height: 1.2; font-size: 8px; padding-left: 15px; padding-right: 15px;'>
-                            This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
-                          </p>
-                        </td>
+                          <td colspan="3" height="40" style="line-height: 1.2; font-size: 8px;">
+                              <p style="font-size: 8px; margin-left: 12px; margin-right: 12px; margin-bottom: 10px;">
+                                  This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the
+                                  contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
+                              </p>
+                          </td>
                       </tr>
-                    </tbody>
                   </table>
                   <p class="mt-2"><b>Note: </b>Do not copy this signature. This is for viewing porposes only.</p>
                 </div>
                 <div v-if="isShowOpt3" class="card card-body">
                   <h4 class="card-title">Live Preview</h4>
                   <hr>
-                  <table style='width: 650px; height: auto; font-family: sans-serif; background: url(https://i.postimg.cc/T114xfKp/bg-gradiant.png); background-repeat: no-repeat; padding: 10px; background-size: cover; color: #fff; border-radius: 10px; margin: 0;'>
-                    <tbody>
+                  <table
+                      width="650"
+                      height="170"
+                      cellspacing="0"
+                      cellpadding="0"
+                      style="
+                          border-collapse: collapse;
+                          background: url(https://adondevelopment.com/clients/2021_sig_directory/images/background.png);
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          border-radius: 15px;
+                          color: white;
+                          font-family: sans-serif;
+                          line-height: 0px;
+                          font-size: 1px;
+                          padding: 0px;
+                          border-spacing: 0px;
+                          margin: 0;
+                          text-decoration: none;
+                      "
+                  >
                       <tr>
-                        <td>
-                          <img style='width: 180px; height: auto; padding: -10px;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png' alt='AdOn logo'>
-                        </td>
-                        <td style='padding-top: 10px;'>
-                          <b style='font-size: 18px;'>
-                            {{ sigName }}
-                          </b>
-                          <p>{{ sigPosition }}</p>
-                          <p style='font-size: 10px;'>
-                            <a :href=`tel:${sigMobile}` target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-mobile-01.png' alt='phone'>
-                              </span> &nbsp {{ sigMobile }}
-                            </a>
-                            <br>
-                            <a href='https://www.adongroup.com.au' target='_blank' style='text-decoration: none; color: #fff; align-items: center;'>
-                              <span>
-                                <img style='width: 10px; align-items: center;' src='https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png' alt='internet'>
-                              </span> &nbsp www.adongroup.com.au
-                            </a>
-                            <br>
-                          </p>
-                        </td>
-                        <td>
-                          <img style='width: 250px; height: auto; float: right;' src='https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif' alt='Partner'>
-                        </td>
+                          <td width="180"><img style="width: 180px; height: auto;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AOG-logo_white.png" alt="" /></td>
+                          <td>
+                              <table width="95%" height="85%" cellspacing="0" cellpadding="0" style="margin-left: 10px; margin-top: 20px;">
+                                  <tr>
+                                      <td height="15" style="font-size: 15px; color: white;"><b>{{sigName}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="11" style="font-size: 11px; line-height: 1; color: white;"><b>{{sigPosition}}</b></td>
+                                  </tr>
+                                  <tr>
+                                      <td height="50" style="line-height: 1.2; font-size: 10px;">
+                                          <p>
+                                              <a style="text-decoration: none; color: white;" href=`tel:${sigMobile}`>
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-mobile-01.png" alt="phone" /> <span style="font-size: 10px;"> {{sigMobile}}</span>
+                                              </a>
+                                              <br />
+                                              <a style="text-decoration: none; color: white;" href="https://www.adongroup.com.au">
+                                                  <img style="width: 10px; align-items: center;" src="https://adondevelopment.com/clients/2021_sig_directory/images/icon-02.png" alt="internet" />
+                                                  <span style="font-size: 10px;"> www.adongroup.com.au</span>
+                                              </a>
+                                          </p>
+                                      </td>
+                                  </tr>
+                              </table>
+                          </td>
+                          <td width="250px"><img style="width: 250px; height: auto; float: right;" src="https://adondevelopment.com/clients/2021_sig_directory/images/AdOn-logo-and-partners-higher-res-updated-v2.gif" alt="Partner" /></td>
                       </tr>
                       <tr>
-                        <td colspan='3'>
-                          <p style='line-height: 1.2; font-size: 8px; padding-left: 15px; padding-right: 15px;'>
-                            This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
-                          </p>
-                        </td>
+                          <td colspan="3" height="40" style="line-height: 1.2; font-size: 8px;">
+                              <p style="font-size: 8px; margin-left: 12px; margin-right: 12px; margin-bottom: 10px;">
+                                  This email, its contents and any attachments are strictly confidential. They must not be used, distributed, copied or read by any person other than the addressee. Unauthorised use, disclosure, copying or reliance on the
+                                  contents of and attachments to this email by anyone other than the addressee may be unlawful. If you have received this email and attachments in error please contact us at Ad on Group immediately to facilitate its return.
+                              </p>
+                          </td>
                       </tr>
-                    </tbody>
                   </table>
                   <p class="mt-2"><b>Note: </b>Do not copy this signature. This is for viewing porposes only.</p>
                 </div>
